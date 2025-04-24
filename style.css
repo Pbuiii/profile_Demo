@@ -8,20 +8,24 @@ background: linear-gradient(90deg,rgba(46, 29, 61, 1) 100%, rgba(253, 29, 29, 1)
     margin: 0;
     box-sizing: border-box;
 }
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 .container{
     max-width: 1200px;
     margin:0 auto;
     padding:20px;
 
 }
-
-
 header {
     
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .logo{
     font-size: 50px;
     background: linear-gradient(to right, #9932CC, #FF69B4);
@@ -33,6 +37,9 @@ nav ul{
   list-style: none;
   gap: 40px;
   
+}
+ul li:hover{
+    transform: scale(1.2);
 }
 
 ul a{
@@ -47,60 +54,261 @@ ul a{
     background-color:  #6f07b4;
     color: white;
     cursor: pointer;
-    transition: al 0.34s ease;
+    transition: all 0.34s ease-in;
+    font-size: 20px;
+    box-shadow: 0 0 20px  #00dbde ;
+}
+.button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 25px  #fc00ff;
 }
 .button span{
-    font-size: 700px;
+    font-size: 2rem;
     text-transform: uppercase;
 }
-main{
- display: flex;
- justify-content: space-between;
- align-items: center;
- margin-top: 50px;
+.button_wrapper{
+    display: flex;
+    gap: 40px;
+    padding-top: 20px;
 }
+.p1 {
+    display: flex;
+   font-size: 30px; 
+    padding:  50px 0 5px;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+   }
 .content{
     font-size: 50px;
     flex-direction: column;
-    gap:50px;
+    gap:30px;
 }    
 .content h1 span{
     background: linear-gradient(to right, #9932CC, #FF69B4);
     background-clip: text;
-    color: transparent;
+    color: transparent; 
+}
+h1{
+    font-size: 60px;
+    gap: 50px;
+   
 }
 .content p:nth-of-type(1) {
-  font-size: 40px;
+  font-size: 30px;
   color:rgb(200,182,226);
 }
 .content p:nth-of-type(2) {
-    font-size: 40px;
+    font-size: 30px;
     color:rgb(169,169,169);
   }
-
   .readmore{
-    border: 2px solid #6f07b4;
-    background-color: transparent;
+    border: 1px solid #00dbde;
     position: relative;
-    overflow: hidden;
-  }
-  .first:hover{
-   transform: scale();
-   box-shadow:0 0 0 0 ;
-
+    color:white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+   font-size: 20px; 
+   transition: all 0.34s ease-in;
+   overflow: hidden;
   }
   .readmore::before{
     content:"";
     position:absolute;
     top: 0;
     left: 0;
-    width: 0px;
-    height: 50px;
+    width: 0%;
+    height: 100%;
     background-color: #6f07b4;
     z-index: -1;
     transition: all 0.3s;
+    transform: scale(1.1);
     
   }
   .readmore:hover::before{
-    width:135px;
+    width:100%;
+    border-radius: 50px;
   }
+.button_section{
+  display: flex;
+  gap: 30px;
+  padding:20px 0 0 0;
+    color:grey;
+    transition:  0.4s;
+    cursor: pointer;
+}
+.btn{
+    border: 1px solid black;
+    display: flex;
+    border-radius: 10px;
+    cursor:pointer;
+    padding:45px;
+    justify-content: flex-start;
+    color: white;
+    background: #2f1842;
+background: radial-gradient(circle,rgba(47, 24, 66, 1) 100%, rgba(253, 29, 29, 1) 0%, rgba(252, 176, 69, 1) 100%);
+}
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 25px  #fc00ff;
+}
+.btn2:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 25px  #fc00ff;
+}
+.btn3:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 25px  #fc00ff;
+}
+.btn .icon{
+    border-radius: 1px;
+    padding: 10px 20px;
+    font-size: 30px;
+    padding-top: 1px;
+}
+.icon:hover{
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #9932CC;
+    background: rgba(153, 50, 204, 0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:  0.5s;
+}
+.btn:hover i,
+.btn2:hover i,
+.btn3:hover i{
+    transform: rotate(360deg);
+}
+.btn2 i{
+    border-radius: 1px;
+    padding: 10px 20px;
+    font-size: 30px;
+    padding-top: 1px;
+}
+.a i{
+    border-radius: 1px;
+    padding: 30px 40px;
+    font-size: 30px;
+    padding-top: 1px;
+    justify-content: flex-start;
+}
+.btn2{
+    border: 1px solid black;
+    display: flex;
+    border-radius: 10px;
+    cursor:pointer;
+    padding: 45px;
+    color: white;
+    justify-content: flex-start;
+    background: #2f1842;
+    background: radial-gradient(circle,rgba(47, 24, 66, 1) 100%, rgba(253, 29, 29, 1) 0%, rgba(252, 176, 69, 1) 100%);
+}
+.button_section2{
+    display: flex;
+    gap: 15px;
+    padding:20px 0 0 0;
+}
+.btn3{
+    border: 1px solid black;
+    display: flex;
+    border-radius: 10px;
+    cursor:pointer;
+    color: white;
+    padding:20px 0 0 0;
+    justify-content: flex-start;
+    background: #2f1842;
+    background: radial-gradient(circle,rgba(47, 24, 66, 1) 100%, rgba(253, 29, 29, 1) 0%, rgba(252, 176, 69, 1) 100%);
+}
+.a{
+     padding: 55px 169px; 
+}
+.relative{
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 60px;
+}
+.footer{
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    padding-bottom:10px;
+    gap:19px;
+}
+.icons a{
+    display: flex;
+    color:white;
+    border: 2px solid white;
+    padding: 0.4em 0.5em;
+    border-radius: 50%;
+    transition: all 1s;
+    align-items: center;justify-content: center;
+}
+.icons a:hover { 
+    background-color: #c80dcb;
+}
+.bar{
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.line{
+    color:antiquewhite;
+    width:100%;
+    height: 3px;
+}
+.p2{
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: end;
+    
+}
+@media only screen and(max-width: 883px ){
+    .container header nav,
+    .container header button{
+        display: none;
+    }
+    .container header .bar {
+        display: block;
+    }
+   main{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+   }
+   .content{
+    justify-content: center;
+    align-items: center;
+   }
+}
+@media (max-width: 510px){
+    .image_container img{
+        width:300px;
+        height:fit-content;
+    }
+    .content h1 {
+        font-size: 50px;
+        white-space: nowrap;
+    }
+}
