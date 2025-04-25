@@ -261,15 +261,16 @@ background: radial-gradient(circle,rgba(47, 24, 66, 1) 100%, rgba(253, 29, 29, 1
     border-radius: 50%;
     transition: all 1s;
     align-items: center;justify-content: center;
+    text-decoration: none;
+    border: none;
 }
 .icons a:hover i{ 
     background-color: #c80dcb;
 }
 .bar{
     display: none;
-    font-size: 20px;
-    cursor: pointer;
-
+    font-size: 30px;
+    
 }
 .line{
     color:antiquewhite;
@@ -283,9 +284,9 @@ background: radial-gradient(circle,rgba(47, 24, 66, 1) 100%, rgba(253, 29, 29, 1
     align-items: end;
     
 }
-@media only screen and(max-width: 883px ){
+@media (max-width: 908x ){
     .container header nav,
-    .container header button{
+    .container header .button{
         display: none;
     }
     .container header .bar {
@@ -301,8 +302,14 @@ background: radial-gradient(circle,rgba(47, 24, 66, 1) 100%, rgba(253, 29, 29, 1
     justify-content: center;
     align-items: center;
    }
+   .icon a{
+    justify-content: center;
+   }
+   .footer{
+    justify-content: center;
+   }
 }
-@media (max-width: 510px){
+@media (max-width: 376px){
     .image_container img{
         width:300px;
         height:fit-content;
